@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace practica_1_3
+{
+    class Car
+    {
+        public string name;
+        public double maxSpeed;
+        public double CalculateTime(double distance)
+        {
+            return distance / maxSpeed;
+        }
+        public Car()
+        {
+            this.Maxspeed = 120;
+            this.name = "Машина";
+        }
+        public Car(double speed, string name)
+        {
+            this.Maxspeed = speed;
+            this.name = name;
+        }
+        public void Vivod()
+        {
+            Console.WriteLine($"Название автомобиля: {name}, максимальная скорость: {maxSpeed}.");
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
+    }
